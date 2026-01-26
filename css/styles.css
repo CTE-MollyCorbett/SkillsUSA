@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --berry:#ac3616;
+    --pine:#5e6742;
+    --branch:#896663;
+    --wall:#d5dade;
+    --leaf:#a1a6a0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #effff0;
+}
+nav {
+    padding: 1.5rem;
+}
+.nav-menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-menu li {
+    margin: 0 0.5rem;
+}
+.nav-menu a {
+    text-decoration: none;
+    color: #dfdfdf;
+    background-color: rgb(200,20,20);
+    display: block;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    transition: all 0.5s ease;
+}
+.nav-menu a:hover {
+    background: red;
+    color: white;
+}
+.nav-container {
+    background-color: brown;
+    padding: 0rem 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5rem brown ridge;
+}
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    text-decoration: underline;
+}
+.hero {
+    position: relative; /* Allows absolute positioning of child elements */
+    width: 100%;
+    min-height: 500px;
+    overflow: hidden;
+}
+.hero {
+    margin-top: 5.9rem;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../images/heroImg1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Perfect centering over the image */
+    text-align: center;
+    color: var(--pine);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    z-index: 2;
+    width: 90%;
+    max-width: 800px;
+}
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.hero-content p {
+    font-size: 1.5rem;
+}
+main {
+    border-right: solid transparent 1rem;
+    border-left: solid transparent 1rem;
+    border-image: linear-gradient(brown, darkgreen) 1;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+footer p {
+    color: white;
+    text-align: center;
+}
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 15px;
+}
+.card h3 {
+    color: var(--branch);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.card p {
+    color: #616660;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-align: justify;
+}
+.card .price {
+    font-size: 1.5rem;
+    color: green;
+}
+.btn-box {
+    display: flex;
+    justify-content: space-between;
+}
+.btn-grn {
+    text-decoration: none;
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 102px;
+}
+.btn-grn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    background-color:forestgreen;
+}
+.btn-red {
+    text-decoration: none;
+    background-color: brown;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 102px;
+}
+.btn-red:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    background-color:red;
+}
+footer {
+    display: flex;
+    box-shadow: 10px 0 0 0 rgba(0, 0, 0, 0.8);
+}
+.footer {
+    background-color: darkgreen;
+    width: 100%;
+    padding: 1.5rem 0;
+    border-top: ridge gold 0.2rem;
+}
+@media screen and (min-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .card-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+}
