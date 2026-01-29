@@ -4,11 +4,12 @@
     box-sizing: border-box;
 }
 :root {
-    --berry:#ac3616;
-    --pine:#5e6742;
-    --branch:#896663;
-    --wall:#d5dade;
-    --leaf:#a1a6a0;
+    --berry:red;
+    --pine:blue;
+    --branch:black;
+    --wall:white;
+    --leaf:green;
+    --gold: gold;
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -88,11 +89,10 @@ footer p {
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
-.rose-img {
+.img {
     width: 100%;
     height: 625px;
     position: relative;
-    background-image: url(../images/roses1080.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -102,198 +102,35 @@ footer p {
     justify-content: center;
     border-radius: 8px 8px 0 0;
     margin-bottom: 15px;
+}
+.rose-img {
+    background-image: url(../images/roses1080.jpg);
 }
 .snake-img {
-    width: 100%;
-    height: 625px;
-    position: relative;
     background-image: url(../images/blacksnake1080.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px 8px 0 0;
-    margin-bottom: 15px;
 }
 .house-img {
-    width: 100%;
-    height: 625px;
-    position: relative;
     background-image: url(../images/house1080.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px 8px 0 0;
-    margin-bottom: 15px;
 }
 .greenhouse-img {
-    width: 100%;
-    height: 625px;
-    position: relative;
     background-image: url(../images/greenhouse1080.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px 8px 0 0;
-    margin-bottom: 15px;
 }
 .pigeon-img {
-    width: 100%;
-    height: 625px;
-    position: relative;
     background-image: url(../images/pigeons1080.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px 8px 0 0;
-    margin-bottom: 15px;
 }
 .koi-img {
-    width: 100%;
-    height: 625px;
-    position: relative;
     background-image: url(../images/koipond1080.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px 8px 0 0;
-    margin-bottom: 15px;
 }
 .library-img {
-    width: 100%;
-    height: 625px;
-    position: relative;
     background-image: url(../images/library1080.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px 8px 0 0;
-    margin-bottom: 15px;
 }
 .pc-img {
-    width: 100%;
-    height: 625px;
-    position: relative;
     background-image: url(../images/pc1080.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px 8px 0 0;
-    margin-bottom: 15px;
 }
 .tree-img {
-    width: 100%;
-    height: 625px;
-    position: relative;
     background-image: url(../images/trees1080.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px 8px 0 0;
-    margin-bottom: 15px;
 }
-.library-img::before {
-    content: ''; 
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 5;
-}
-.snake-img::before {
-    content: ''; 
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 5;
-}
-.house-img::before {
-    content: ''; 
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 5;
-}
-.pigeon-img::before {
-    content: ''; 
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 5;
-}
-.pc-img::before {
-    content: ''; 
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 5;
-}
-.tree-img::before {
-    content: ''; 
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 5;
-}
-.greenhouse-img::before {
-    content: ''; 
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 5;
-}
-.koi-img::before {
+.img::before {
     content: ''; 
     position: absolute;
     top: 0;
@@ -304,14 +141,7 @@ footer p {
     z-index: 5;
 }
 .rose-img::before {
-    content: ''; 
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
-    z-index: 5;
 }
 .card-title {
     color: silver;

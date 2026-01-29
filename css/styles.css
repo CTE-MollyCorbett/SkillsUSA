@@ -4,11 +4,12 @@
     box-sizing: border-box;
 }
 :root {
-    --berry:#ac3616;
-    --pine:#5e6742;
-    --branch:#896663;
-    --wall:#d5dade;
-    --leaf:#a1a6a0;
+    --berry:red;
+    --pine:blue;
+    --branch:black;
+    --wall:white;
+    --leaf:green;
+    --gold: gold;
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
