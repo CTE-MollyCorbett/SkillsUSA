@@ -103,48 +103,23 @@ footer p {
     border-radius: 8px 8px 0 0;
     margin-bottom: 15px;
 }
-.rose-img {
-    background-image: url(../images/roses1080.jpg);
+.agagia-img {
+    background-image: url(../images/egypt_agagia_img_375.jpg);
 }
-.snake-img {
-    background-image: url(../images/blacksnake1080.jpg);
+.renin-img {
+    background-image: url(../images/ww1-trenches-mobile.jpg);
 }
-.house-img {
-    background-image: url(../images/house1080.jpg);
+.delville-img {
+    background-image: url(../images/the-battle-of-the-somme-375.jpg);
 }
-.greenhouse-img {
-    background-image: url(../images/greenhouse1080.jpg);
+.baboon-img {
+    background-image: url(../images/the_pet_baboon_375.jpg);
 }
-.pigeon-img {
-    background-image: url(../images/pigeons1080.jpg);
-}
-.koi-img {
-    background-image: url(../images/koipond1080.jpg);
-}
-.library-img {
-    background-image: url(../images/library1080.jpg);
-}
-.pc-img {
-    background-image: url(../images/pc1080.jpg);
-}
-.tree-img {
-    background-image: url(../images/trees1080.jpg);
-}
-.img::before {
-    content: ''; 
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 5;
-}
-.rose-img::before {
-    background-color: rgba(0, 0, 0, 0.2);
+.jackie-img {
+    background-image: url(../images/corporal-jackie-the-baboon-injured.jpg);
 }
 .card-title {
-    color: silver;
+    color: var(--gold);
     font-size: 3rem;
     margin-bottom: 10px;
     text-align: center;
@@ -156,10 +131,6 @@ footer p {
     font-size: 1.5rem;
     line-height: 2;
     text-align: justify;
-}
-.card-large .price {
-    font-size: 2.5rem;
-    color: green;
 }
 .btn-box {
     display: flex;
@@ -208,4 +179,41 @@ footer {
     width: 100%;
     padding: 1.5rem 0;
     border-top: ridge gold 0.2rem;
+}
+@media screen and (min-width: 768px) {
+    .agagia-img {
+    background-image: url(../images/egypt_agagia_img.jpg);
+    }
+    .renin-img {
+        background-image: url(../images/ww1-trenches-725.jpg);
+    }
+    .delville-img {
+        background-image: url(../images/the-battle-of-the-somme.jpg);
+    }
+    .baboon-img {
+        background-image: url(../images/the_pet_baboon_725.jpg);
+    }
+    .jackie-img {
+        background-image: url(../images/corporal-jackie-the-baboon-injured-725.jpg);
+    }
+}
+@media screen and (min-width: 1024px) {
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+    .agagia-img {
+    background-image: url(../images/egypt_agagia_img_1080.jpg);
+    }
+    .renin-img {
+        background-image: url(../images/ww1-trenches.jpg);
+    }
+    .delville-img {
+        background-image: url(../images/the-battle-of-the-somme-1080.jpg);
+    }
+    .baboon-img {
+        background-image: url(../images/the_pet_baboon_1080.jpg);
+    }
+    .jackie-img {
+        background-image: url(../images/corporal-jackie-the-baboon-injured-1080.jpg);
+    }
 }

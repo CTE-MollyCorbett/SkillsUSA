@@ -5,15 +5,15 @@
 }
 :root {
     --berry:red;
-    --pine:blue;
+    --pine:gold;
     --branch:black;
     --wall:white;
     --leaf:green;
-    --gold: gold;
+    --gold: blue;
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #effff0;
+    background-color: rgba(255,255,00,0.2);
 }
 nav {
     padding: 1.5rem;
@@ -72,7 +72,6 @@ nav {
     width: 100%;
     height: 100vh;
     position: relative;
-    background-image: url(../images/heroImg1920.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -80,6 +79,15 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.hero1 {
+    background-image: url(../images/ww1-trenches-mobile.jpg);
+}
+.hero2 {
+    background-image: url(../images/the_pet_baboon_375.jpg);
+}
+.hero3 {
+    background-image: url(../images/the-battle-of-the-somme-375.jpg);
 }
 .hero-content {
     position: absolute;
@@ -94,18 +102,62 @@ nav {
     max-width: 800px;
 }
 .hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 5rem;
+    text-decoration: underline;
+    margin-bottom: 1.5rem;
+    max-width: 1000px;
+}
+.hero-content h2 {
+    font-size: 4rem;
+    text-decoration: underline;
+    margin-bottom: 2rem;
+    max-width: 800px;
 }
 .hero-content p {
     font-size: 1.5rem;
 }
+.btn-hero {
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    color: var(--gold);
+    font-size: 1.5rem;
+}
+.hero-box {
+    display: flex;
+    justify-content: space-around;
+}
 main {
     border-right: solid transparent 1rem;
     border-left: solid transparent 1rem;
-    border-image: linear-gradient(brown, darkgreen) 1;
+    border-image: linear-gradient(var(--berry), var(--leaf)) 1;
     padding-top: 2rem;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
+}
+.article {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 10px;
+    margin-top: 1rem;
+}
+article {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+article:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
 }
 footer p {
     color: white;
@@ -148,17 +200,12 @@ footer p {
     line-height: 1.6;
     text-align: justify;
 }
-.card .price {
-    font-size: 1.5rem;
-    color: green;
-}
 .btn-box {
     display: flex;
     justify-content: space-between;
 }
-.btn-grn {
+.btn {
     text-decoration: none;
-    background-color: darkgreen;
     color: white;
     border: none;
     padding: 10px;
@@ -168,26 +215,20 @@ footer p {
     transition: all 0.3s ease;
     width: 102px;
 }
-.btn-grn:hover {
+.btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+.btn-grn {
+    background-color: darkgreen;
+}
+.btn-grn:hover {
     background-color:forestgreen;
 }
 .btn-red {
-    text-decoration: none;
     background-color: brown;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 6px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    width: 102px;
 }
 .btn-red:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     background-color:red;
 }
 footer {
@@ -204,6 +245,15 @@ footer {
     .card-container {
         grid-template-columns: 1fr 1fr;
     }
+    .hero1 {
+    background-image: url(../images/ww1-trenches-725.jpg);
+    }
+    .hero2 {
+        background-image: url(../images/the_pet_baboon_725.jpg);
+    }
+    .hero3 {
+        background-image: url(../images/the-battle-of-the-somme.jpg);
+    }
 }
 @media screen and (min-width: 1024px) {
     .card-container {
@@ -211,5 +261,14 @@ footer {
     }
     .hero-content h1 {
         font-size: 3.5rem;
+    }
+    .hero1 {
+    background-image: url(../images/ww1-trenches-1920.jpg);
+    }
+    .hero2 {
+        background-image: url(../images/the_pet_baboon_1920.jpg);
+    }
+    .hero3 {
+        background-image: url(../images/the-battle-of-the-somme-1920.jpg);
     }
 }
