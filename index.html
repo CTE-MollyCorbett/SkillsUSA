@@ -24,7 +24,7 @@
         <section class="hero hero1" id="home">
             <div class="hero-content">
                 <h1>Corporal Jackie</h1>
-                <p>The Battlefield Baboon</p>
+                <h2>The Battlefield Baboon</h2>
             </div>
         </section>
     </header>
@@ -33,29 +33,29 @@
         <section id="cards">
             <div class="card-container">
                 <div class="card">
-                    <img src="images/the-battle-of-the-somme-1080.jpg" alt="">
+                    <img src="images/the-battle-of-the-somme-375.jpg" alt="A line of soldiers marching through a sunken path">
                     <h3>Battle of Delville Wood</h3>
-                    <p></p>
+                    <p>The Battle of Delville Wood was a horrific battle early in the Somme campaign, with a casualty rate of 80&percnt;.</p>
                     <div class="btn-box">
-                        <a href="https://www.dav.org/" target="_blank" class="btn btn-grn">Donate</a>
+                        <a href="https://www.dav.org/" target="_blank" class="btn btn-grn">Donate Now</a>
                         <a href="pages/delville.html" class="btn btn-red">Learn More</a>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="images/egypt_agagia_img_1080.jpg" alt="">
+                    <img src="images/egypt_agagia_img_375.jpg" alt="Some soldiers man an artillery gun behind a pit of empty rounds">
                     <h3>Battle of Agagia</h3>
-                    <p></p>
+                    <p>The Battle of Agagia took place in Egypt, against Senussi rebels backed by the Ottoman Empire.</p>
                     <div class="btn-box">
-                        <a href="https://www.dav.org/" target="_blank" class="btn btn-grn">Donate</a>
+                        <a href="https://www.dav.org/" target="_blank" class="btn btn-grn">Donate Now</a>
                         <a href="pages/agagia.html" class="btn btn-red">Learn More</a>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="images/ww1-trenches.jpg" alt="">
-                    <h3>Retreat from Reninghelst</h3>
-                    <p></p>
+                    <img src="images/ww1-trenches-mobile.jpg" alt="Soldiers in the trenches of France, behind barbed wire and destroyed buildings">
+                    <h3>Retreat to Reninghelst</h3>
+                    <p>The South African Brigade was heavily shelled during withdrawal to Reninghelst, and Jackie attempted to build a wall.</p>
                     <div class="btn-box">
-                        <a href="https://www.dav.org/" target="_blank" class="btn btn-grn">Donate</a>
+                        <a href="https://www.dav.org/" target="_blank" class="btn btn-grn">Donate Now</a>
                         <a href="pages/reninghelst.html" class="btn btn-red">Learn More</a>
                     </div>
                 </div>
@@ -77,15 +77,51 @@
             </div>
         </section>
         <section class="article">
-            <article class="hero-box">
+            <article class="hero-box hero-box3">
                 <a href="pages/summary.html" class="btn-hero">Jackie fought and lived alongside soldiers in the 3rd South African Infantry Regiment. He served in battles in French trenches against Germany, in Egypt against enemy tribes, and as the armies' most valuable night sentry. But who was Jackie before the Great War, and where did he go afterwards?</a>
             </article>
         </section>
     </main>
-    <footer>
-        <div class="footer">
-            <p>&copy; 2026 Corporal Jackie project. All rights reserved.</p>
-            <p>This project is created for educational purposes only.</p>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section footer-nav">
+                    <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#cards">Battles</a></li>
+                            <li><a href="pages/medals.html">Medals</a></li>
+                            <li><a href="pages/summary.html">Lifetime</a></li>
+                        </ul>
+                </div>
+                <div class="footer-section footer-copyright">
+                    <h3>Copyright</h3>
+                        <p>&copy; 2026 Molly Corbett SkillsUSA. All rights reserved</p>
+                        <p>St. Lawrence County, New York</p>
+                        <p>Canton, NY 13617</p>
+                </div>
+                <div class="footer-section footer-disclaimer">
+                    <h3>Educational Use</h3>
+                        <p>This website was created for educational purposes as part of a SkillsUSA Competition at SUNY Morrisville.</p>
+                        <p>Images and content are used under fair use guidelines for educational purposes. All trademarks and copyrights belong to their respective owners.</p>
+                </div>
+                <div class="footer-section footer-contact">
+                    <h3>Contact Me</h3>
+                        <form action="mailto:cte-molly.corbett@sllboces.org" method="POST" enctype="text/plain">
+                            <!-- Name Field -->
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required placeholder="Type your name">
+                            <!-- Email Field -->
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required placeholder="YourEmail@you.org">
+                            <!-- Message Field -->
+                            <label for="message">Message:</label>
+                            <textarea name="message" id="message" required placeholder="Type your message here"></textarea>
+                            <!-- TODO: Add submit button with class "btn btn-primary" -->
+                            <button type="submit" class="btn btn-foot">Send Message</button>
+                        </form>
+                </div>
+            </div>
         </div>
     </footer>
 </body>

@@ -13,18 +13,18 @@
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #effff0;
+    background-color: rgba(255,255,00,0.2);
 }
 main {
     border-right: solid transparent 1rem;
     border-left: solid transparent 1rem;
-    border-image: linear-gradient(brown, darkgreen) 1;
+    border-image: linear-gradient(blue, darkgreen) 1;
     padding-top: 0.7rem;
     margin-top: 5.8rem;
 }
 nav {
     padding: 1.5rem;
-    background-color: brown;
+    background-color: darkblue;
 }
 .nav-menu {
     display: flex;
@@ -38,7 +38,7 @@ nav {
 .nav-menu a {
     text-decoration: none;
     color: #dfdfdf;
-    background-color: rgb(200,20,20);
+    background-color: rgb(40,40,200);
     display: block;
     border-radius: 5px;
     padding: 0.5rem;
@@ -46,11 +46,11 @@ nav {
     transition: all 0.5s ease;
 }
 .nav-menu a:hover {
-    background: red;
-    color: white;
+    background: rgb(0,0,255);
+    color: gold;
 }
 .nav-container {
-    background-color: brown;
+    background-color: darkblue;
     padding: 0rem 1rem;
     position: fixed;
     width: 100%;
@@ -60,7 +60,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 0.5rem brown ridge;
+    border-bottom: 0.5rem darkblue ridge;
 }
 .logo {
     color: white;
@@ -117,6 +117,7 @@ footer p {
 }
 .jackie-img {
     background-image: url(../images/corporal-jackie-the-baboon-injured.jpg);
+    background-position: top;
 }
 .card-title {
     color: var(--gold);
@@ -127,58 +128,129 @@ footer p {
     z-index: 10;
 }
 .card-large p {
-    color: #5e6742;
+    color: rgb(120,20,20);
     font-size: 1.5rem;
     line-height: 2;
     text-align: justify;
+    margin-bottom: 1rem;
 }
 .btn-box {
     display: flex;
     justify-content: space-between;
 }
-.btn-grn {
+.btn {
     text-decoration: none;
-    background-color: darkgreen;
     color: white;
     border: none;
-    padding: 15px;
+    padding: 10px 15px;
     border-radius: 6px;
     font-size: 1.5rem;
     cursor: pointer;
     transition: all 0.3s ease;
-    width: 127px;
+    width: 110px;
 }
-.btn-grn:hover {
+.btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    background-color:forestgreen;
+    color: gold;
 }
-.btn-red {
-    text-decoration: none;
+.grn {
+    background-color: rgb(20,100,20);
+}
+.grn:hover{
+    background-color: var(--leaf);
+}
+.red {
     background-color: brown;
-    color: white;
-    border: none;
-    padding: 15px;
-    border-radius: 6px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    width: 127px;
 }
-.btn-red:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    background-color:red;
+.red:hover {
+    background-color:rgb(200,20,20);
 }
-footer {
-    display: flex;
-    box-shadow: 10px 0 0 0 rgba(0, 0, 0, 0.8);
-}
+/* ==================== FOOTER STYLES ============================================================================================================== */
 .footer {
     background-color: darkgreen;
-    width: 100%;
-    padding: 1.5rem 0;
-    border-top: ridge gold 0.2rem;
+    color: gold;
+    padding: 3rem 0;
+    border-top: solid 0.3rem gold;
+}
+/* ==================== FOOTER GRID ==================== */
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 0 2rem 0 2rem;
+    justify-content: space-evenly;
+}
+.footer-container {
+    justify-content: space-evenly;
+}
+.footer-section h3 {
+    color: gold;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+/* ==================== FOOTER NAVIGATION ==================== */
+.footer-nav ul {
+    list-style: none;
+}
+.footer-nav li {
+    margin-bottom: 0.5rem;
+}
+.footer-nav a {
+    color: white;
+    transition: color 0.3s ease;
+}
+.footer-nav a:hover {
+    color: gold;
+}
+/* ==================== FOOTER COPYRIGHT & DISCLAIMER ==================== */
+.footer-copyright p,
+.footer-disclaimer p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+/* ==================== FOOTER CONTACT FORM ==================== */
+.footer-contact form {
+    display: flex;
+    flex-direction: column;
+}
+.footer-contact label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.footer-contact input,
+.footer-contact textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #777;
+    border-radius: 5px;
+    font-family: inherit;
+}
+.footer-contact textarea {
+    min-height: 100px;
+    resize: vertical;
+    overflow: auto;
+}
+.btn-foot {
+    text-decoration: none;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 102px;
+    background-color: rgb(0,75,0);
+}
+.btn-foot:hover {
+    background-color: green;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    color: gold;
 }
 @media screen and (min-width: 768px) {
     .agagia-img {
@@ -195,6 +267,9 @@ footer {
     }
     .jackie-img {
         background-image: url(../images/corporal-jackie-the-baboon-injured-725.jpg);
+    }
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
     }
 }
 @media screen and (min-width: 1024px) {
@@ -215,5 +290,8 @@ footer {
     }
     .jackie-img {
         background-image: url(../images/corporal-jackie-the-baboon-injured-1080.jpg);
+    }
+    .footer-grid {
+        grid-template-columns: 0.5fr 0.75fr 1fr 1fr;
     }
 }
